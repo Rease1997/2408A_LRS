@@ -19,13 +19,15 @@ public class Boot : UnitySingleton<Boot>
     public Transform UIRoot;
     public Transform TipRoot;
 
+    public GameObject test1;
+
 
     void Start()
     {
         Init();
         uiCamera = transform.GetComponentInChildren<Camera>();
         UIManager.Instance.OpenWindow("LoginPanel");
-
+        test1 = new GameObject();
         GetShopDataList();
         //GameScenesManager.Instance.LoadSceneAsync("Game", "PlayerPanel");
     }
