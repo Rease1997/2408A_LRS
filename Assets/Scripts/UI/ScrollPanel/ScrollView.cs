@@ -71,6 +71,12 @@ public class ScrollView : ViewBase
             ShowDes(skillDic[allList[page]]);
         });
     }
+    //5555
+    //6666
+    //7777
+    //1111
+    //2222
+    //3333
 
     public Dictionary<int, SkillData> GetSkillDicFunc()
     {
