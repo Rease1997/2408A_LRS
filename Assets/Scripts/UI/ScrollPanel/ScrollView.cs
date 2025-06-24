@@ -96,9 +96,7 @@ public class ScrollView : ViewBase
     private void AnalyzeJson(string jsonName, Action<JsonData> callback)
     {
         string jsonPath = "Assets/GameData/Data/Json/" + jsonName + ".json";
-        Debug.Log("json文件路径：" + jsonPath);
         string jsonStr = AssetDatabase.LoadAssetAtPath<TextAsset>(jsonPath).ToString();
-        Debug.Log("json文件内容：" + jsonStr);
         JsonData temp = JsonMapper.ToObject(jsonStr);
         callback(temp);
     }
