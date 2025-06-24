@@ -72,6 +72,10 @@ public class ScrollView : ViewBase
         });
     }
 
+    //1111
+    //2222
+    //3333
+
     public Dictionary<int, SkillData> GetSkillDicFunc()
     {
         Dictionary<int, SkillData> dic = new Dictionary<int, SkillData>();
