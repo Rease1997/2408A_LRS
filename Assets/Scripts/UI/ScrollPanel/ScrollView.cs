@@ -78,10 +78,6 @@ public class ScrollView : ViewBase
     //2222
     //3333
 
-    //1111
-    //2222
-    //3333
-
     public Dictionary<int, SkillData> GetSkillDicFunc()
     {
         Dictionary<int, SkillData> dic = new Dictionary<int, SkillData>();
@@ -96,7 +92,7 @@ public class ScrollView : ViewBase
                 data.Title = item["Title"].ToString();
                 data.Des = item["Des"].ToString();
                 data.Type = int.Parse(item["Type"].ToString());
-                dic.Add(data.ID,data);
+                dic.Add(data.ID, data);
                 Debug.Log("AllSkillData.count:" + dic.Count);
             }
         });
