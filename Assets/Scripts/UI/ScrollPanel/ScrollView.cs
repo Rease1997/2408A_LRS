@@ -156,7 +156,7 @@ public class ScrollView : ViewBase
         if (time > 0.1f)
         {
             testCount++;
-            if (testCount > 10)
+            if (testCount > 15)
                 return;
             time = 0;
             for (int i = 0; i < newList.Count; i++)
